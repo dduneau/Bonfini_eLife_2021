@@ -1,0 +1,23 @@
+/* Whole document: */ 
+body{ 
+    font-family: helvetica
+    font-size: 8pt; 
+} 
+/* Headers */ 
+h1,h2,h3,h4,h5,h6{ 
+    font-family: times, serif;
+    font-size: 7pt,2pt,3pt,2pt,2pt,2pt; 
+} 
+h1,  h2, .h2, h3, .h3 {
+    margin-top: 24px;
+}
+<style>
+p.caption {
+  font-size: 0.9em;
+  font-style: italic;
+  color: grey;
+  margin-right: 10%;
+  margin-left: 10%;  
+  text-align: justify;
+}
+</style>

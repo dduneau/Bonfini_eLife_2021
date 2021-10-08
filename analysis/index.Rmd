@@ -7,5 +7,6 @@ output:
 editor_options:
   chunk_output_type: console
 ---
+This website contains the code used to analyses related to Bonfini et al. eLife 2021. 
 
-Welcome to my research website.
+Please follow the link [Rmarkdown](Bonfini_eLife_2021.html)
