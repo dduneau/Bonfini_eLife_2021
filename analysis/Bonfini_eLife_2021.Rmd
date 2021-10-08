@@ -194,7 +194,9 @@ cbbHY_HYtoHS = c("#C3E6FC","#FFE5E5")
 ### Import dataset {.unnumbered}
 
 ```{r Dataset, cache=T,results=FALSE}
-path.to.data = "F:/Dropbox/Github/Bonfini_eLife_2021/data/"
+#path.to.data = "F:/Dropbox/Github/Bonfini_eLife_2021/data/"data/"
+
+path.to.data = "data/"
 
 rm(d,path)
 d = list()
@@ -273,7 +275,7 @@ At eclosion, flies were allocated to either HS or HY before midgut dissection at
 :::
 
 ```{r Figure 1A, fig.align="center",fig.width=6, fig.height=5}
-img1A = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/1A.jpg") 
+img1A = readImage("data/1A.jpg") 
 gob_imageFig1A = rasterGrob(img1A)
 grid.draw(gob_imageFig1A)
 ```
@@ -340,13 +342,13 @@ Canton S (Cs) flies fed on HS diet (C, first image) have shorter midguts than fl
 :::
 
 ```{r Figure 1C, fig.align="center",fig.width=8, fig.height=3, echo=FALSE}
-img1C = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/1C.jpg") 
+img1C = readImage("data/1C.jpg") 
 gob_imageFig1C = rasterGrob(img1C)
 grid.draw(gob_imageFig1C)
 ```
 
 ```{r Figure 1D, fig.align="center",fig.width=12, fig.height=4, echo=FALSE}
-img1D = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/1D.jpg") 
+img1D = readImage("data/1D.jpg") 
 gob_imageFig1D = rasterGrob(img1D)
 grid.draw(gob_imageFig1D)
 ```
@@ -659,7 +661,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_1.tiff",
+tiff("data/Figures/Figure_1.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -1300,7 +1302,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_1S1.tiff",
+tiff("data/Figures/Figure_1S1.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -1373,7 +1375,7 @@ Additional subregions have been described (Buchon et al., 2013; Marianes and Spr
 :::
 
 ```{r Figure 1S2A, fig.align="center", fig.height=5}
- img1S2A = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/1- S2A.jpg") 
+ img1S2A = readImage("data/1- S2A.jpg") 
  gob_imageFig1S2A = rasterGrob(img1S2A)
  grid.draw(gob_imageFig1S2A)
 ```
@@ -1439,7 +1441,7 @@ dev.off()
 ```
 
 ```{r Figure 1S2B, fig.align="center", fig.height=5}
- img1S2B = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/Plot_Fig1S2B.jpeg") 
+ img1S2B = readImage("data/Plot_Fig1S2B.jpeg") 
  gob_imageFig1S2B = rasterGrob(img1S2B)
  grid.draw(gob_imageFig1S2B)
 ```
@@ -1458,7 +1460,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_1S2.tiff",
+tiff("data/Figures/Figure_1S2.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -1488,7 +1490,7 @@ Highlighted genes have been selected based on their statistical significance, th
 :::
 
 ```{r Figure 1S3A, fig.align="center"}
-img1S3A = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/1 - S3.jpg") 
+img1S3A = readImage("data/1 - S3.jpg") 
 gob_imageFig1S3A = rasterGrob(img1S3A)
 grid.draw(gob_imageFig1S3A)
 ```
@@ -1507,7 +1509,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_1S3.tiff",
+tiff("data/Figures/Figure_1S3.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -1544,7 +1546,7 @@ tab_nutri_geo =
 tab_nutri_geo$YSdiet <- with(tab_nutri_geo, (Yeast.in.Diet)/(Sucrose.in.Diet))
 	tab_nutri_geo$YSingested <- with(tab_nutri_geo, (Yeast.ingested)/(Sucrose.ingested))
 
-jpeg(filename =  "F:/Dropbox/Github/Bonfini_eLife_2021/data/Plot_Fig2A.jpeg",
+jpeg(filename =  "data/Plot_Fig2A.jpeg",
      res = 600,
      width = 5, height = 4, units = 'in' )
 par(cex=1, mar = c(4.5, 4.5, 1, 3))
@@ -1557,7 +1559,7 @@ with(tab_nutri_geo, geomPlotta(x = Sucrose.in.Diet, y = Yeast.in.Diet, z = Total
 ```
 
 ```{r Figure 2A, fig.align="center",fig.width=6, fig.height=6}
-img2A = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/Plot_Fig2A.jpeg")
+img2A = readImage("data/Plot_Fig2A.jpeg")
 gob_imageFig2A = rasterGrob(img2A)
 grid.draw(gob_imageFig2A)
 ```
@@ -2171,7 +2173,7 @@ Plot_Fig2G
 
 ```{r Figure 2, echo=FALSE,warning=FALSE,message=FALSE,eval=F}
 
-# img2A = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/Nutri_geo_graph.jpg") 
+# img2A = readImage("data/Nutri_geo_graph.jpg") 
 # gob_imageFig2A = rasterGrob(img2A)
 
 
@@ -2210,7 +2212,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_2.tiff",
+tiff("data/Figures/Figure_2.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -2353,7 +2355,7 @@ These data were used to calculate the total amount of yeast and sucrose ingested
 tab_geom_fecal = 
   d[["2 - S1B"]]
 
-jpeg(filename = "F:/Dropbox/Github/Bonfini_eLife_2021/data/Plot_Fig2-S1B.jpeg",
+jpeg(filename = "data/Plot_Fig2-S1B.jpeg",
      res = 600,
      width = 5, height = 4, units = 'in' )
 par(cex=1, mar = c(4, 4, 1, 3))
@@ -2361,7 +2363,7 @@ with(tab_geom_fecal, geomPlotta(x = Sucrose.in.Diet, y = Yeast.in.Diet, z = (Abs
 ```
 
 ```{r Figure 2S1B, fig.align="center",fig.width=6, fig.height=6}
-img2S1B = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/Plot_Fig2-S1B.jpeg") 
+img2S1B = readImage("data/Plot_Fig2-S1B.jpeg") 
 gob_imageFig2S1B = rasterGrob(img2S1B)
 grid.draw(gob_imageFig2S1B)
 ```
@@ -2449,7 +2451,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_2S1.tiff",
+tiff("data/Figures/Figure_2S1.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -2844,7 +2846,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_2S2.tiff",
+tiff("data/Figures/Figure_2S2.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -2891,7 +2893,7 @@ All nuclei are stained with DAPI (blue).
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 3A, fig.align="center",fig.width=3, fig.height=3, echo=FALSE}
-img3A = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/3A.jpg") 
+img3A = readImage("data/3A.jpg") 
 gob_imageFig3A = rasterGrob(img3A)
 grid.draw(gob_imageFig3A)
 ```
@@ -2899,7 +2901,7 @@ grid.draw(gob_imageFig3A)
 
 ::: {.col-md-6}
 ```{r Figure 3B, fig.align="center",fig.width=3, fig.height=3, echo=FALSE}
-img3B = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/3B.jpg") 
+img3B = readImage("data/3B.jpg") 
 gob_imageFig3B = rasterGrob(img3B)
 grid.draw(gob_imageFig3B)
 ```
@@ -3188,7 +3190,7 @@ Representative picture of midguts stained with anti-Mesh antibody on HS (D, left
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 3E, fig.align="center",fig.width=3, fig.height=3, echo=FALSE}
-img3E = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/3E.jpg") 
+img3E = readImage("data/3E.jpg") 
 gob_imageFig3E = rasterGrob(img3E)
 grid.draw(gob_imageFig3E)
 ```
@@ -3196,7 +3198,7 @@ grid.draw(gob_imageFig3E)
 
 ::: {.col-md-6}
 ```{r Figure 3F, fig.align="center",fig.width=3, fig.height=3, echo=FALSE}
-img3F = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/3F.jpg") 
+img3F = readImage("data/3F.jpg") 
 gob_imageFig3F = rasterGrob(img3F)
 grid.draw(gob_imageFig3F)
 ```
@@ -3311,7 +3313,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_3.tiff",
+tiff("data/Figures/Figure_3.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -3493,7 +3495,7 @@ Top view in this scheme is as in pictures shown in figure 3 D, E.
 :::
 
 ```{r Figure 3S1B, fig.align="center",fig.width=3, fig.height=4, echo=FALSE}
-img3S1B = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/3 - S1B.jpg") 
+img3S1B = readImage("data/3 - S1B.jpg") 
 gob_imageFig3S1B = rasterGrob(img3S1B)
 grid.draw(gob_imageFig3S1B)
 ```
@@ -3599,7 +3601,7 @@ Representative density plot from FACS for HS diet *Complete annotation found in 
 :::
 
 ```{r Figure 3S1D, fig.align="center",fig.width=3, fig.height=4, echo=FALSE}
-img3S1D = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/3 - S1D.jpg") 
+img3S1D = readImage("data/3 - S1D.jpg") 
 gob_imageFig3S1D = rasterGrob(img3S1D)
 grid.draw(gob_imageFig3S1D)
 ```
@@ -3612,7 +3614,7 @@ Representative density plot from FACS for HY diet *Complete annotation found in 
 :::
 
 ```{r Figure 3S1E, fig.align="center",fig.width=3, fig.height=4, echo=FALSE}
-img3S1E = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/3 - S1E.jpg") 
+img3S1E = readImage("data/3 - S1E.jpg") 
 gob_imageFig3S1E = rasterGrob(img3S1E)
 grid.draw(gob_imageFig3S1E)
 ```
@@ -3625,7 +3627,7 @@ Representative frequency plot from FACS for HS diet. *Complete annotation found 
 :::
 
 ```{r Figure 3S1F, fig.align="center",fig.width=3, fig.height=4, echo=FALSE}
-img3S1F = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/3 - S1F.jpg") 
+img3S1F = readImage("data/3 - S1F.jpg") 
 gob_imageFig3S1F = rasterGrob(img3S1F)
 grid.draw(gob_imageFig3S1F)
 
@@ -3639,7 +3641,7 @@ Representative frequency plot from FACS for HY diet*Complete annotation found in
 :::
 
 ```{r Figure 3S1G, fig.align="center",fig.width=3, fig.height=4, echo=FALSE}
-img3S1G = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/3 - S1G.jpg") 
+img3S1G = readImage("data/3 - S1G.jpg") 
 gob_imageFig3S1G = rasterGrob(img3S1G)
 grid.draw(gob_imageFig3S1G)
 ```
@@ -3886,7 +3888,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_3S1.tiff",
+tiff("data/Figures/Figure_3S1.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -4527,7 +4529,7 @@ GFP, in green, marks all cells made since the EsgF/O system was activated.
 ::: {.col-md-6}
 ```{r Figure 4E, fig.align="center",fig.width=5, fig.height=3, echo=FALSE}
 
-img4E = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/4E.jpg") 
+img4E = readImage("data/4E.jpg") 
 gob_imageFig4E = rasterGrob(img4E)
 grid.draw(gob_imageFig4E)
 
@@ -4536,7 +4538,7 @@ grid.draw(gob_imageFig4E)
 
 ::: {.col-md-6}
 ```{r Figure 4F, fig.align="center",fig.width=5, fig.height=3, echo=FALSE}
-img4F = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/4F.jpg") 
+img4F = readImage("data/4F.jpg") 
 gob_imageFig4F = rasterGrob(img4F)
 grid.draw(gob_imageFig4F)
 ```
@@ -4555,7 +4557,7 @@ Representative pictures for the cell loss assay in growing conditions (G, H, top
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 4G, fig.align="center",fig.width=3, fig.height=3, echo=FALSE}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/4G.jpg") 
+img = readImage("data/4G.jpg") 
 gob_imageFig4G = rasterGrob(img)
 grid.draw(gob_imageFig4G)
 ```
@@ -4563,7 +4565,7 @@ grid.draw(gob_imageFig4G)
 
 ::: {.col-md-6}
 ```{r Figure 4H, fig.align="center",fig.width=3, fig.height=3, echo=FALSE}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/4H.jpg") 
+img = readImage("data/4H.jpg") 
 gob_imageFig4H = rasterGrob(img)
 grid.draw(gob_imageFig4H)
 ```
@@ -4573,7 +4575,7 @@ grid.draw(gob_imageFig4H)
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 4I, fig.align="center",fig.width=3, fig.height=3, echo=FALSE}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/4I.jpg") 
+img = readImage("data/4I.jpg") 
 gob_imageFig4I = rasterGrob(img)
 grid.draw(gob_imageFig4I)
 ```
@@ -4581,7 +4583,7 @@ grid.draw(gob_imageFig4I)
 
 ::: {.col-md-6}
 ```{r Figure 4J, fig.align="center",fig.width=3, fig.height=3, echo=FALSE}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/4J.jpg") 
+img = readImage("data/4J.jpg") 
 gob_imageFig4J = rasterGrob(img)
 grid.draw(gob_imageFig4J)
 ```
@@ -4811,7 +4813,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_4.tiff",
+tiff("data/Figures/Figure_4.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -5385,7 +5387,7 @@ Flies were dissected every 7 days, up until day 28.
 :::
 
 ```{r Figure 4S1B, fig.align="center"}
-img4S1B = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/4 - S1B.jpg") 
+img4S1B = readImage("data/4 - S1B.jpg") 
 gob_imageFig4S1B = rasterGrob(img4S1B)
 grid.draw(gob_imageFig4S1B)
 ```
@@ -5863,7 +5865,7 @@ with(tab_nutri_geo_PH3, geomPlotta(x = Sucrose.in.Diet, y = Yeast.in.Diet, z = P
 ```
 
 ```{r Figure 4S1F, fig.align="center",fig.width=6, fig.height=6}
-img4S1F = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/Plot_Fig4-S1F.jpeg") 
+img4S1F = readImage("data/Plot_Fig4-S1F.jpeg") 
 gob_imageFig4S1F = rasterGrob(img4S1F)
 grid.draw(gob_imageFig4S1F)
 ```
@@ -5952,7 +5954,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_4S1.tiff",
+tiff("data/Figures/Figure_4S1.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -6015,7 +6017,7 @@ Flies were dissected at 2 and 16-days after cessation of hormone pulse.
 
 
 ```{r Figure 4S2A, fig.align="center"}
-img4S2A = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/4 - S2A.jpg") 
+img4S2A = readImage("data/4 - S2A.jpg") 
 gob_imageFig4S2A = rasterGrob(img4S2A)
 grid.draw(gob_imageFig4S2A)
 ```
@@ -6365,7 +6367,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_4S2.tiff",
+tiff("data/Figures/Figure_4S2.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -6590,7 +6592,7 @@ Table of genes significantly differently expressed, between HS and HY, as a rati
 :::
 
 ```{r Figure 5C, fig.align="center",fig.width=6, fig.height=12}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5C.jpg") 
+img = readImage("data/5C.jpg") 
 gob_imageFig5C = rasterGrob(img)
 grid.draw(gob_imageFig5C)
 ```
@@ -7310,7 +7312,7 @@ Images show lower incorporation on HS (F, F', top row) than HY (G, G', bottom ro
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 5F1, fig.align="center",fig.width=3, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5F.jpg") 
+img = readImage("data/5F.jpg") 
 gob_imageFig5F = rasterGrob(img)
 grid.draw(gob_imageFig5F)
 ```
@@ -7318,7 +7320,7 @@ grid.draw(gob_imageFig5F)
 
 ::: {.col-md-6}
 ```{r Figure 5F2, fig.align="center",fig.width=3, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5F'.jpg") 
+img = readImage("data/5F'.jpg") 
 gob_imageFig5F2 = rasterGrob(img)
 grid.draw(gob_imageFig5F2)
 ```
@@ -7328,7 +7330,7 @@ grid.draw(gob_imageFig5F2)
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 5G1, fig.align="center",fig.width=3, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5G.jpg") 
+img = readImage("data/5G.jpg") 
 gob_imageFig5G = rasterGrob(img)
 grid.draw(gob_imageFig5G)
 ```
@@ -7336,7 +7338,7 @@ grid.draw(gob_imageFig5G)
 
 ::: {.col-md-6}
 ```{r Figure 5G2, fig.align="center",fig.width=3, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5G'.jpg") 
+img = readImage("data/5G'.jpg") 
 gob_imageFig5G2 = rasterGrob(img)
 grid.draw(gob_imageFig5G2)
 ```
@@ -7444,7 +7446,7 @@ p-eIF2α stain is elevated on HS (I, I', top row) compared to HY (J, J', bottom 
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 5I1, fig.align="center",fig.width=3, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5I.jpg") 
+img = readImage("data/5I.jpg") 
 gob_imageFig5I = rasterGrob(img)
 grid.draw(gob_imageFig5I)
 ```
@@ -7452,7 +7454,7 @@ grid.draw(gob_imageFig5I)
 
 ::: {.col-md-6}
 ```{r Figure 5I2, fig.align="center",fig.width=3, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5I'.jpg") 
+img = readImage("data/5I'.jpg") 
 gob_imageFig5I2 = rasterGrob(img)
 grid.draw(gob_imageFig5I2)
 ```
@@ -7462,7 +7464,7 @@ grid.draw(gob_imageFig5I2)
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 5J1, fig.align="center",fig.width=3, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5J.jpg") 
+img = readImage("data/5J.jpg") 
 gob_imageFig5J = rasterGrob(img)
 grid.draw(gob_imageFig5J)
 ```
@@ -7470,7 +7472,7 @@ grid.draw(gob_imageFig5J)
 
 ::: {.col-md-6}
 ```{r Figure 5J2, fig.align="center",fig.width=3, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5J'.jpg") 
+img = readImage("data/5J'.jpg") 
 gob_imageFig5J2 = rasterGrob(img)
 grid.draw(gob_imageFig5J2)
 ```
@@ -7888,7 +7890,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_5.tiff",
+tiff("data/Figures/Figure_5.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -8226,7 +8228,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_5S1.tiff",
+tiff("data/Figures/Figure_5S1.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -8259,7 +8261,7 @@ In red anti p-eIF2α stain together with HowTS\>UAS-GFP in green (Visceral muscl
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 5S2A, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5 - S2A.jpg") 
+img = readImage("data/5 - S2A.jpg") 
 gob_imageFig5S2A = rasterGrob(img)
 grid.draw(gob_imageFig5S2A)
 ```
@@ -8267,7 +8269,7 @@ grid.draw(gob_imageFig5S2A)
 
 ::: {.col-md-6}
 ```{r Figure 5S2A1, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5 - S2A'.jpg") 
+img = readImage("data/5 - S2A'.jpg") 
 gob_imageFig5S2A1 = rasterGrob(img)
 grid.draw(gob_imageFig5S2A1)
 ```
@@ -8277,7 +8279,7 @@ grid.draw(gob_imageFig5S2A1)
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 5S2B, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5 - S2B.jpg") 
+img = readImage("data/5 - S2B.jpg") 
 gob_imageFig5S2B = rasterGrob(img)
 grid.draw(gob_imageFig5S2B)
 ```
@@ -8285,7 +8287,7 @@ grid.draw(gob_imageFig5S2B)
 
 ::: {.col-md-6}
 ```{r Figure 5S2B1, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5 - S2B'.jpg") 
+img = readImage("data/5 - S2B'.jpg") 
 gob_imageFig5S2B1 = rasterGrob(img)
 grid.draw(gob_imageFig5S2B1)
 ```
@@ -8295,7 +8297,7 @@ grid.draw(gob_imageFig5S2B1)
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 5S2C, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5 - S2C.jpg") 
+img = readImage("data/5 - S2C.jpg") 
 gob_imageFig5S2C = rasterGrob(img)
 grid.draw(gob_imageFig5S2C)
 ```
@@ -8303,7 +8305,7 @@ grid.draw(gob_imageFig5S2C)
 
 ::: {.col-md-6}
 ```{r Figure 5S2C1, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5 - S2C'.jpg") 
+img = readImage("data/5 - S2C'.jpg") 
 gob_imageFig5S2C1 = rasterGrob(img)
 grid.draw(gob_imageFig5S2C1)
 ```
@@ -8313,7 +8315,7 @@ grid.draw(gob_imageFig5S2C1)
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 5S2D, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5 - S2D.jpg") 
+img = readImage("data/5 - S2D.jpg") 
 gob_imageFig5S2D = rasterGrob(img)
 grid.draw(gob_imageFig5S2D)
 ```
@@ -8321,7 +8323,7 @@ grid.draw(gob_imageFig5S2D)
 
 ::: {.col-md-6}
 ```{r Figure 5S2D1, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/5 - S2D'.jpg") 
+img = readImage("data/5 - S2D'.jpg") 
 gob_imageFig5S2D1 = rasterGrob(img)
 grid.draw(gob_imageFig5S2D1)
 ```
@@ -8774,7 +8776,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_5S2.tiff",
+tiff("data/Figures/Figure_5S2.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -9097,7 +9099,7 @@ Blocking EGF signaling with UAS-Egfr-IR in progenitor cells (B, right) results i
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 6B, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/6B.jpg") 
+img = readImage("data/6B.jpg") 
 gob_imageFig6B = rasterGrob(img)
 grid.draw(gob_imageFig6B)
 ```
@@ -9105,7 +9107,7 @@ grid.draw(gob_imageFig6B)
 
 ::: {.col-md-6}
 ```{r Figure 6C, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/6C.jpg") 
+img = readImage("data/6C.jpg") 
 gob_imageFig6C = rasterGrob(img)
 grid.draw(gob_imageFig6C)
 ```
@@ -9512,7 +9514,7 @@ Representative pictures of midguts stained with membrane marker Mesh (white), sh
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 6H, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/6H.jpg") 
+img = readImage("data/6H.jpg") 
 gob_imageFig6H = rasterGrob(img)
 grid.draw(gob_imageFig6H)
 ```
@@ -9520,7 +9522,7 @@ grid.draw(gob_imageFig6H)
 
 ::: {.col-md-6}
 ```{r Figure 6I, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/6I.jpg") 
+img = readImage("data/6I.jpg") 
 gob_imageFig6I = rasterGrob(img)
 grid.draw(gob_imageFig6I)
 ```
@@ -9650,7 +9652,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_6.tiff",
+tiff("data/Figures/Figure_6.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -9862,7 +9864,7 @@ Overexpression of reaper in progenitor cells (marked in red) via EsgTS>rpr-OE re
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 6S1B, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/6 - S1B.jpg") 
+img = readImage("data/6 - S1B.jpg") 
 gob_imageFig6S1B = rasterGrob(img)
 grid.draw(gob_imageFig6S1B)
 ```
@@ -9870,7 +9872,7 @@ grid.draw(gob_imageFig6S1B)
 
 ::: {.col-md-6}
 ```{r Figure 6S1C, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/6 - S1C.jpg") 
+img = readImage("data/6 - S1C.jpg") 
 gob_imageFig6S1C = rasterGrob(img)
 grid.draw(gob_imageFig6S1C)
 ```
@@ -9879,7 +9881,7 @@ grid.draw(gob_imageFig6S1C)
 
 ::: {.col-md-6}
 ```{r Figure 6S1D, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/6 - S1D.jpg") 
+img = readImage("data/6 - S1D.jpg") 
 gob_imageFig6S1D = rasterGrob(img)
 grid.draw(gob_imageFig6S1D)
 ```
@@ -9887,7 +9889,7 @@ grid.draw(gob_imageFig6S1D)
 
 ::: {.col-md-6}
 ```{r Figure 6S1E, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/6 - S1E.jpg") 
+img = readImage("data/6 - S1E.jpg") 
 gob_imageFig6S1E = rasterGrob(img)
 grid.draw(gob_imageFig6S1E)
 ```
@@ -10023,7 +10025,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_6S1.tiff",
+tiff("data/Figures/Figure_6S1.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -10243,7 +10245,7 @@ Representative pictures of single cell clones (hsFlp; Act>STOP>Gal4, UAS-GFP) su
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 7B, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/7B.jpg") 
+img = readImage("data/7B.jpg") 
 gob_imageFig7B = rasterGrob(img)
 grid.draw(gob_imageFig7B)
 ```
@@ -10251,7 +10253,7 @@ grid.draw(gob_imageFig7B)
 
 ::: {.col-md-6}
 ```{r Figure 7C, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/7C.jpg") 
+img = readImage("data/7C.jpg") 
 gob_imageFig7C = rasterGrob(img)
 grid.draw(gob_imageFig7C)
 
@@ -10404,7 +10406,7 @@ Knockdown of TOR with MyoTS, an EC-specific driver, leads to the increased numbe
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 7E, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/7E.jpg") 
+img = readImage("data/7E.jpg") 
 gob_imageFig7E = rasterGrob(img)
 grid.draw(gob_imageFig7E)
 
@@ -10413,7 +10415,7 @@ grid.draw(gob_imageFig7E)
 
 ::: {.col-md-6}
 ```{r Figure 7F, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/7F.jpg") 
+img = readImage("data/7F.jpg") 
 gob_imageFig7F = rasterGrob(img)
 grid.draw(gob_imageFig7F)
 ```
@@ -10654,7 +10656,7 @@ Representative picture utilizing single cell clonal system suggests that blockin
 :::
 
 ```{r Figure 7I, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/7I.jpg") 
+img = readImage("data/7I.jpg") 
 gob_imageFig7I = rasterGrob(img)
 grid.draw(gob_imageFig7I)
 ```
@@ -10989,7 +10991,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_7.tiff",
+tiff("data/Figures/Figure_7.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -11359,7 +11361,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_7S1.tiff",
+tiff("data/Figures/Figure_7S1.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -11394,7 +11396,7 @@ A reporter line for Foxo pathway activity, thor-lacZ, has increased intensity on
 ::: {.row}
 ::: {.col-md-6}
 ```{r Figure 7S2A, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/7- S2A.jpg") 
+img = readImage("data/7- S2A.jpg") 
 gob_imageFig7S2A = rasterGrob(img)
 grid.draw(gob_imageFig7S2A)
 ```
@@ -11402,7 +11404,7 @@ grid.draw(gob_imageFig7S2A)
 
 ::: {.col-md-6}
 ```{r Figure 7S2A1, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/7- S2A1.jpg") 
+img = readImage("data/7- S2A1.jpg") 
 gob_imageFig7S2A1 = rasterGrob(img)
 grid.draw(gob_imageFig7S2A1)
 
@@ -11411,7 +11413,7 @@ grid.draw(gob_imageFig7S2A1)
 
 ::: {.col-md-6}
 ```{r Figure 7S2B, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/7- S2B.jpg") 
+img = readImage("data/7- S2B.jpg") 
 gob_imageFig7S2B = rasterGrob(img)
 grid.draw(gob_imageFig7S2B)
 ```
@@ -11419,7 +11421,7 @@ grid.draw(gob_imageFig7S2B)
 
 ::: {.col-md-6}
 ```{r Figure 7S2B1, fig.align="center",fig.width=4, fig.height=4}
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/7- S2B1.jpg") 
+img = readImage("data/7- S2B1.jpg") 
 gob_imageFig7S2B1 = rasterGrob(img)
 grid.draw(gob_imageFig7S2B1)
 ```
@@ -11765,7 +11767,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_7S2.tiff",
+tiff("data/Figures/Figure_7S2.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
@@ -11853,7 +11855,7 @@ Sugar inhibits translation and uncouples ISC proliferation from expression of st
 
 ```{r Figure 7S3A, fig.align="center", fig.height=5, fig.width=6, warning=FALSE}
 
-img = readImage("F:/Dropbox/Github/Bonfini_eLife_2021/data/7 - S3A.jpg") 
+img = readImage("data/7 - S3A.jpg") 
 gob_imageFig7S3A = rasterGrob(img)
 grid.draw(gob_imageFig7S3A)
 
@@ -11878,7 +11880,7 @@ lay=mm
 
 blank=rectGrob(gp=gpar(col="white"))
 
-tiff("F:/Dropbox/Github/Bonfini_eLife_2021/data/Figures/Figure_7S3.tiff",
+tiff("data/Figures/Figure_7S3.tiff",
      width=8.27, height=11.69,units='in',res=300)
 
 grid.arrange(blank,
