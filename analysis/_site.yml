@@ -1,7 +1,7 @@
-name: "Bonfini_eLife_2021"
+name: Bonfini_eLife_2021
 output_dir: ../docs
 navbar:
-  title: "Bonfini_eLife_2021"
+  title: Bonfini_eLife_2021
   left:
   - text: Home
     href: index.html
@@ -9,6 +9,10 @@ navbar:
     href: about.html
   - text: License
     href: license.html
+  right:
+  - icon: fa-github
+    text: Source code
+    href: https://github.com/dduneau/Bonfini_eLife_2021
 output:
   workflowr::wflow_html:
     toc: yes
