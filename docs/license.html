@@ -32,6 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <link rel="icon" href="https://github.com/workflowr/workflowr-assets/raw/master/img/reproducible.png">
 <!-- Add a small amount of space between sections. -->
@@ -263,7 +265,13 @@ $(document).ready(function () {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/dduneau/Bonfini_eLife_2021">
+    <span class="fa fa-github"></span>
+     
+    Source code
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -329,25 +337,175 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong8fa9317"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> 8fa9317 </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomdduneauBonfinieLife2021tree2e08f0d92f6ed5aa3da4487267fc3e4c067b8903targetblank2e08f0da"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/dduneau/Bonfini_eLife_2021/tree/2e08f0d92f6ed5aa3da4487267fc3e4c067b8903" target="_blank">2e08f0d</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong8fa9317" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomdduneauBonfinieLife2021tree2e08f0d92f6ed5aa3da4487267fc3e4c067b8903targetblank2e08f0da" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version 8fa9317. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/dduneau/Bonfini_eLife_2021/tree/2e08f0d92f6ed5aa3da4487267fc3e4c067b8903" target="_blank">2e08f0d</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 </p>
 <pre><code>
 Ignored files:
-    Ignored:    analysis/Bonfini_eLife_2021.html
     Ignored:    analysis/Bonfini_eLife_2021_cache/
     Ignored:    analysis/site_libs/
+    Ignored:    data/.Rhistory
+
+Untracked files:
+    Untracked:  data/.RDataTmp
+    Untracked:  data/.RDataTmp1
+    Untracked:  data/.RDataTmp2
+    Untracked:  data/.RDataTmp3
+    Untracked:  data/.RDataTmp4
+    Untracked:  data/.RDataTmp5
+    Untracked:  data/.RDataTmp6
+    Untracked:  data/.RDataTmp7
+    Untracked:  data/1 - S1B.csv
+    Untracked:  data/1 - S1C.csv
+    Untracked:  data/1 - S1D.csv
+    Untracked:  data/1 - S1E.csv
+    Untracked:  data/1 - S3.jpg
+    Untracked:  data/1- S2A.jpg
+    Untracked:  data/1A.jpg
+    Untracked:  data/1B.csv
+    Untracked:  data/1C.jpg
+    Untracked:  data/1D.jpg
+    Untracked:  data/1E - 1S1A.csv
+    Untracked:  data/1F - G.csv
+    Untracked:  data/2 - S1A.csv
+    Untracked:  data/2 - S2A.csv
+    Untracked:  data/2 - S2B.csv
+    Untracked:  data/2 -S1B supplement data.xlsx
+    Untracked:  data/2-S1C.csv
+    Untracked:  data/2A.csv
+    Untracked:  data/2E - calories.csv
+    Untracked:  data/2E - table.tif
+    Untracked:  data/2E.csv
+    Untracked:  data/2F - calories.csv
+    Untracked:  data/2F.csv
+    Untracked:  data/2G.csv
+    Untracked:  data/2S2C.csv
+    Untracked:  data/3 - S1A.csv
+    Untracked:  data/3 - S1B.jpg
+    Untracked:  data/3 - S1C.csv
+    Untracked:  data/3 - S1D.jpg
+    Untracked:  data/3 - S1E.jpg
+    Untracked:  data/3 - S1F.jpg
+    Untracked:  data/3 - S1G.jpg
+    Untracked:  data/3 - S1H.csv
+    Untracked:  data/3A.jpg
+    Untracked:  data/3B.jpg
+    Untracked:  data/3C.csv
+    Untracked:  data/3E.jpg
+    Untracked:  data/3F.jpg
+    Untracked:  data/3G.csv
+    Untracked:  data/3H.csv
+    Untracked:  data/4 - S1A.csv
+    Untracked:  data/4 - S1B.jpg
+    Untracked:  data/4 - S1F.csv
+    Untracked:  data/4 - S2A.jpg
+    Untracked:  data/4A.csv
+    Untracked:  data/4B, 4S1C.csv
+    Untracked:  data/4C', 4S1D'.csv
+    Untracked:  data/4C, 4S1D.csv
+    Untracked:  data/4E.jpg
+    Untracked:  data/4F.jpg
+    Untracked:  data/4G.jpg
+    Untracked:  data/4H.jpg
+    Untracked:  data/4I.jpg
+    Untracked:  data/4J.jpg
+    Untracked:  data/4K.csv
+    Untracked:  data/4L, 4S2D.csv
+    Untracked:  data/4S2B.csv
+    Untracked:  data/4S2C.csv
+    Untracked:  data/5 - S1A.csv
+    Untracked:  data/5 - S2A'.jpg
+    Untracked:  data/5 - S2A.jpg
+    Untracked:  data/5 - S2B'.jpg
+    Untracked:  data/5 - S2B.jpg
+    Untracked:  data/5 - S2C'.jpg
+    Untracked:  data/5 - S2C.jpg
+    Untracked:  data/5 - S2D'.jpg
+    Untracked:  data/5 - S2D.jpg
+    Untracked:  data/5 - S2E.csv
+    Untracked:  data/5 - S2F.csv
+    Untracked:  data/5 - S2G.csv
+    Untracked:  data/5-S2.jpg
+    Untracked:  data/5B.csv
+    Untracked:  data/5C.jpg
+    Untracked:  data/5C.xlsx
+    Untracked:  data/5D.csv
+    Untracked:  data/5E.csv
+    Untracked:  data/5F'.jpg
+    Untracked:  data/5F.jpg
+    Untracked:  data/5G'.jpg
+    Untracked:  data/5G.jpg
+    Untracked:  data/5H.csv
+    Untracked:  data/5I'.jpg
+    Untracked:  data/5I.jpg
+    Untracked:  data/5J'.jpg
+    Untracked:  data/5J.jpg
+    Untracked:  data/5K.csv
+    Untracked:  data/5L.csv
+    Untracked:  data/5M.csv
+    Untracked:  data/6 - S1B.jpg
+    Untracked:  data/6 - S1C.jpg
+    Untracked:  data/6 - S1D.jpg
+    Untracked:  data/6 - S1E.jpg
+    Untracked:  data/6 - S1F.csv
+    Untracked:  data/6A - 7A.csv
+    Untracked:  data/6B.jpg
+    Untracked:  data/6C.jpg
+    Untracked:  data/6D.csv
+    Untracked:  data/6E.csv
+    Untracked:  data/6F.csv
+    Untracked:  data/6G.csv
+    Untracked:  data/6H.jpg
+    Untracked:  data/6I.jpg
+    Untracked:  data/6J.csv
+    Untracked:  data/7 - S1A.csv
+    Untracked:  data/7 - S2C.csv
+    Untracked:  data/7 - S2D.csv
+    Untracked:  data/7 - S2E.csv
+    Untracked:  data/7 - S3A.jpg
+    Untracked:  data/7- S2A.jpg
+    Untracked:  data/7- S2A1.jpg
+    Untracked:  data/7- S2B.jpg
+    Untracked:  data/7- S2B1.jpg
+    Untracked:  data/7B.jpg
+    Untracked:  data/7C.jpg
+    Untracked:  data/7D.csv
+    Untracked:  data/7E.jpg
+    Untracked:  data/7F.jpg
+    Untracked:  data/7G.csv
+    Untracked:  data/7H.csv
+    Untracked:  data/7I.jpg
+    Untracked:  data/7J.csv
+    Untracked:  data/7K.csv
+    Untracked:  data/7L.csv
+    Untracked:  data/DGRP_wolbachia_DFD.csv
+    Untracked:  data/GWAS_Response_Gut_Diet.jpg
+    Untracked:  data/Plot_Fig1S2B.jpeg
+    Untracked:  data/Plot_Fig2-S1B.jpeg
+    Untracked:  data/Plot_Fig2A.jpeg
+    Untracked:  data/Plot_Fig4-S1F.jpeg
+    Untracked:  data/Template TIF.tif
+    Untracked:  data/genes_info.csv
+    Untracked:  data/gutGrowthDataIndex.csv
+    Untracked:  data/image_5C.jpg
+    Untracked:  data/normCounts.csv
+    Untracked:  data/normCountsMeans_noDay4.csv
+    Untracked:  data/readTable.csv
+    Untracked:  data/readTableTMP.csv
+    Untracked:  data/readTableTPM.csv
+    Untracked:  data/stockDecode.csv
+    Untracked:  data/weights.csv
 
 </code></pre>
 <p>
@@ -388,10 +546,27 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/dduneau/Bonfini_eLife_2021/ec22c19e1b7db09d9fb5686e5fd350e89c682486/docs/license.html" target="_blank">ec22c19</a>
+</td>
+<td>
+dduneau
+</td>
+<td>
+2021-10-08
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-2fbc3e1
+<a href="https://github.com/dduneau/Bonfini_eLife_2021/blob/2fbc3e1602501b2a2dcdca9a55c301274c308f6e/analysis/license.Rmd" target="_blank">2fbc3e1</a>
 </td>
 <td>
 dduneau
